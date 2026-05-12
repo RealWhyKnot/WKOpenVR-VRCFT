@@ -1,19 +1,13 @@
-# OpenVR-WKVRCFT (archived fork)
+# OpenVR-WKVRCFT
 
-This repository is a license-preservation snapshot. The original source it was forked from is at:
+Release mirror for the FaceTracking module of the [OpenVR-Pair](https://github.com/RealWhyKnot/OpenVR-WKPairDriver) umbrella toolset. Each release here is the OpenVR-Pair umbrella build with `enable_facetracking.flag` pre-dropped so face and eye tracking activate immediately on install.
 
-https://github.com/benaclejames/VRCFaceTracking
+This repository is also a fork preservation snapshot. The original source it was forked from is at https://github.com/benaclejames/VRCFaceTracking. Pre-fork state is preserved on the [`archive-source`](https://github.com/RealWhyKnot/OpenVR-WKVRCFT/tree/archive-source) branch so the Apache-2.0 attribution chain stays intact.
 
-Active development of the face- and eye-tracking integration that builds on
-this source lives in the OpenVR-WKPairDriver monorepo as the `facetracking`
-feature module:
+Active development of the FaceTracking module -- the C# .NET 10 host sidecar plus the driver-side continuous calibration, skew-line vergence lock, and confidence-weighted eyelid sync -- lives at [modules/facetracking/](https://github.com/RealWhyKnot/OpenVR-WKPairDriver/tree/main/modules/facetracking) in the umbrella repo.
 
-https://github.com/RealWhyKnot/OpenVR-WKPairDriver
-
-The state of the source at the time of forking is preserved on the
-`archive-source` branch of this repository so the Apache-2.0 attribution
-chain stays intact.
+Issues and contributions: open them at [OpenVR-WKPairDriver/issues](https://github.com/RealWhyKnot/OpenVR-WKPairDriver/issues).
 
 ## License
 
-Apache-2.0. See `LICENSE` for the full text.
+`LICENSE` on this branch is Apache-2.0, covering the preserved upstream source on `archive-source`. Release artifacts published here are the combined work from the OpenVR-Pair monorepo and ship under GPL-3.0 (see the LICENSE file inside each release zip).
